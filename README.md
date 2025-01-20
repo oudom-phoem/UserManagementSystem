@@ -9,7 +9,7 @@ This is a Java-based User Management Console System that implements the MVC (Mod
 3. **Update User by UUID**: Modify a user's name, email, or deletion status.
 4. **Delete User by UUID**: Mark a user as deleted.
 5. **Display All Active Users**: Paginated display of active (non-deleted) users in a table format.
-6. **Preloaded Users**: The system includes preloaded users, which cannot be modified or displayed in active user listings.
+6. **Preloaded Users**: The system includes preloaded users.
 7. **Exit**: Exit the application.
 
 ## Project Structure
@@ -88,14 +88,14 @@ Upon running the application, a menu will be displayed with the following option
 ## Preloaded Users
 
 - The application preloads a set of users for demonstration purposes.
-- Preloaded users cannot be updated, deleted, or displayed in the active user list.
+- Preloaded users can be found in the `UserDao` class.
 
 ## MVC Design Pattern
 
 The project adheres to the MVC pattern:
 
 - **Model**: Defines the `User` class and related data structures.
-- **View**: Handles all user interactions (e.g., `UserView`, `MainMenuView`).
+- **View**: Handles all user interactions (e.g., `UserView`).
 - **Controller**: Processes user input and updates the model or view (e.g., `UserController`).
 - **Service**: Contains business logic (e.g., `UserService`).
 - **DAO**: Manages data persistence (e.g., `UserDao`).
